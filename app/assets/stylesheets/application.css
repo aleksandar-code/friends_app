@@ -35,6 +35,20 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
+a:hover,
+button input:hover,
+button:hover {
   color: rgb(84, 133, 133);
+  cursor: pointer;
+}
+
+button {
+  all: initial;
+  font-weight: bold;
+}
+
+button a,
+button input {
+  all: initial;
+  font-weight: bold;
 }
