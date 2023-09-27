@@ -15,17 +15,17 @@
 
   <tbody>
       <% @friends.each do |friend| %>
-        
-        <tr>
-          <td><%= friend.first_name %></td>
-          <td><%= friend.last_name %></td>
-          <td><%= friend.email %></td>
-          <td><%= friend.phone %></td>
-          <td><%= friend.twitter %></td>
+        <% if friend.user == current_user%>
+          <tr>
+            <td><%= friend.first_name %></td>
+            <td><%= friend.last_name %></td>
+            <td><%= friend.email %></td>
+            <td><%= friend.phone %></td>
+            <td><%= friend.twitter %></td>
 
-          <td><button><%= link_to 'Show', friend  %></button></td>
-        </tr>
-        
+            <td><button><%= link_to 'Show', friend  %></button></td>
+          </tr>
+        <% end %>
       <% end %>
     </tbody>
 </table>

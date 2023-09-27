@@ -26,12 +26,17 @@ nav {
   align-items: center;
   background-color: rgb(204, 204, 204);
   color: rgb(50, 48, 48);
+  font-size: 1.5em;
+}
+
+nav button {
+  border: none;
 }
 
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 1.5em;
+  font-size: 1em;
   transition: all 0.3s ease-in-out;
 }
 
@@ -42,13 +47,10 @@ button:hover {
   cursor: pointer;
 }
 
+button a,
+button input,
 button {
   all: initial;
-  font-weight: bold;
-}
-
-button a,
-button input {
-  all: initial;
-  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid black;
 }

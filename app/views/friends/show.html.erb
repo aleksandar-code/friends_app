@@ -5,6 +5,5 @@
 <br>
 <div>
   <button><%= link_to "Edit", edit_friend_path(@friend) %></button>
-  |
-  <button><%= button_to "Destroy", @friend, method: :delete %></button>
+  <%= button_to "Destroy", @friend, method: :delete %>
 </div>
